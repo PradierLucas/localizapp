@@ -68,7 +68,7 @@
 
 ![Diagrama de Caso de Uso 5](imagenes/Imagen5.png)
 
-![Diagrama de Secuencia](imagenes/Imagen6.png)
+![Diagrama de Secuencia](imagenes/secuencia.png)
 
 ## ✅ REQUISITOS FUNCIONALES (RF)
 
