@@ -14,7 +14,7 @@
 * **Postcondiciones:** La ubicación queda guardada y lista para ser visualizada o usada en navegación.
 * **🔹 Historia de usuario:** Como conductor que frecuenta zonas concurridas, quiero guardar mi ubicación al momento de estacionar, para poder volver fácilmente a mi vehículo más tarde.
 
-![Diagrama de Caso de Uso 1](imagenes/imagen1.png)
+![Diagrama de Caso de Uso 1](imagenes/Imagen1.png)
 
 ### ✅ Caso de Uso 2: Ver la ubicación guardada en un mapa
 * **Actor principal:** Usuario
@@ -27,7 +27,7 @@
 * **Postcondiciones:** El usuario visualiza el punto exacto donde dejó su vehículo.
 * **🔹 Historia de usuario:** Como usuario distraído, quiero ver en un mapa dónde dejé el auto, para identificar visualmente su ubicación exacta.
 
-![Diagrama de Caso de Uso 2](imagenes/imagen2.png)
+![Diagrama de Caso de Uso 2](imagenes/Imagen2.png)
 
 ### ✅ Caso de Uso 3: Navegar hasta la ubicación del vehículo
 * **Actor principal:** Usuario
@@ -40,7 +40,7 @@
 * **Postcondiciones:** El usuario recibe indicaciones para llegar al auto.
 * **🔹 Historia de usuario:** Como visitante de un centro comercial grande, quiero recibir indicaciones desde donde estoy hasta mi auto, para no perder tiempo buscándolo.
 
-![Diagrama de Caso de Uso 3](imagenes/imagen3.png)
+![Diagrama de Caso de Uso 3](imagenes/Imagen3.png)
 
 ### ✅ Caso de Uso 4: Agregar nota adicional a la ubicación
 * **Actor principal:** Usuario
@@ -53,7 +53,7 @@
 * **Postcondiciones:** La ubicación cuenta con una descripción adicional útil para el usuario.
 * **🔹 Historia de usuario:** Como conductor que estaciona en lugares grandes o con pisos, quiero escribir una nota como “Nivel -2, cerca del ascensor” para recordar detalles visuales del lugar exacto.
 
-![Diagrama de Caso de Uso 4](imagenes/imagen4.png)
+![Diagrama de Caso de Uso 4](imagenes/Imagen4.png)
 
 ### ✅ Caso de Uso 5: Eliminar o actualizar ubicación guardada
 * **Actor principal:** Usuario
@@ -66,9 +66,9 @@
 * **Postcondiciones:** La ubicación se actualiza o elimina según la acción tomada.
 * **🔹 Historia de usuario:** Como usuario habitual de la app, quiero actualizar la ubicación si cambié de lugar de estacionamiento o eliminarla si ya no la necesito.
 
-![Diagrama de Caso de Uso 5](imagenes/imagen5.png)
+![Diagrama de Caso de Uso 5](imagenes/Imagen5.png)
 
-![Diagrama de Secuencia](imagenes/imagen6.png)
+![Diagrama de Secuencia](imagenes/Imagen6.png)
 
 ## ✅ REQUISITOS FUNCIONALES (RF)
 
@@ -101,25 +101,25 @@
     * RNF6 : Autenticación opcional mediante biometría (huella digital o reconocimiento facial). (Media) [cite: 38, 39]
 4.  **Compatibilidad**
     * RNF7 : Soporte para Android (API 26+) y iOS (iOS 14+). (Alta) [cite: 39, 40]
-    * RNF8 : Capacidad de operar sin conexión a internet, guardando la ubicación localmente hasta que haya conexión. (Media) [cite: 40, 41]
+    * RNF8 : Capacidad de operar sin conexión a internet, guardando la ubicación localmente hasta que haya conexión. (Media) 
 5.  **Escalabilidad**
-    * RNF9 : Estructura modular para permitir futuras funcionalidades como compartir ubicación o recordatorios inteligentes. (Baja) [cite: 41]
+    * RNF9 : Estructura modular para permitir futuras funcionalidades como compartir ubicación o recordatorios inteligentes. (Baja) 
 
 ## 📊 PRIORIZACIÓN
 
 | Tipo            | Alta                     | Media                  | Baja/Opcional          |
 | --------------- | ------------------------ | ---------------------- | ---------------------- |
 | Funcionales     | RF1, RF3, RF4, RF6       | RF2, RF7, RF8          | RF5, RF9, RF10         |
-| No Funcionales | RNF1, RNF2, RNF3, RNF5 | RNF4, RNF6, RNF7, RNF8 | RNF9                   | [cite: 42]
+| No Funcionales | RNF1, RNF2, RNF3, RNF5 | RNF4, RNF6, RNF7, RNF8 | RNF9                   | 
 
 ## 🧪 EJEMPLOS DE CASOS DE PRUEBA
 
 * RF1 + RNF1
     * Escenario : El usuario pulsa el botón “Guardar ubicación” con señal GPS débil. [cite: 43, 44]
-    * Resultado esperado : La app almacena las coordenadas aproximadas en menos de 2 segundos y muestra una notificación de éxito. [cite: 44]
+    * Resultado esperado : La app almacena las coordenadas aproximadas en menos de 2 segundos y muestra una notificación de éxito.
 * RNF2
-    * Escenario : La app permanece abierta en segundo plano por 2 horas mientras se mantiene el GPS activo. [cite: 45, 46]
-    * Resultado esperado : El consumo de batería no debe superar el 7%. [cite: 46]
+    * Escenario : La app permanece abierta en segundo plano por 2 horas mientras se mantiene el GPS activo.
+    * Resultado esperado : El consumo de batería no debe superar el 7%. 
 * RF6 + RNF8
     * Escenario : El usuario intenta ver la ruta hacia su vehículo sin conexión a internet. [cite: 47, 48]
     * Resultado esperado : Se muestra una alerta de conectividad o se ofrece una ruta previamente guardada. [cite: 48]
@@ -137,6 +137,6 @@
 Este es el diagrama Entidad Relación del proyecto, diseñado para cubrir todos los casos de usos mencionados anteriormente en el proyecto.
 Usamos el modelo SQL con tablas claves y relación. [cite: 49, 50]
 
-![Diagrama Entidad Relación 1](imagenes/imagen7.png)
+![Diagrama Entidad Relación 1](imagenes/Imagen7.png)
 
-![Diagrama Entidad Relación 2](imagenes/imagen8.png)
+![Diagrama Entidad Relación 2](imagenes/Imagen8.png)
