@@ -73,34 +73,34 @@
 ## ✅ REQUISITOS FUNCIONALES (RF)
 
 1.  **Gestión de Ubicaciones**
-    * RF1 : Guardar ubicación actual del vehículo con coordenadas GPS, fecha y hora exacta. (Alta prioridad) [cite: 23, 24]
-    * RF2 : Agregar o editar notas descriptivas asociadas a la ubicación (ej: “Zona verde, entrada lateral”). (Media) [cite: 24]
-    * RF3 : Permitir eliminar o actualizar ubicaciones guardadas, de forma individual o por selección múltiple. (Alta) [cite: 25, 26]
+    * RF1 : Guardar ubicación actual del vehículo con coordenadas GPS, fecha y hora exacta. (Alta prioridad) 
+    * RF2 : Agregar o editar notas descriptivas asociadas a la ubicación (ej: “Zona verde, entrada lateral”). 
+    * RF3 : Permitir eliminar o actualizar ubicaciones guardadas, de forma individual o por selección múltiple. (Alta) 
 2.  **Visualización**
-    * RF4 : Mostrar las ubicaciones en un mapa interactivo con marcadores y detalles al tocar. (Alta) [cite: 26, 27]
-    * RF5 : Permitir filtrar ubicaciones por fecha, etiquetas o palabras clave. (Baja) [cite: 27, 28]
+    * RF4 : Mostrar las ubicaciones en un mapa interactivo con marcadores y detalles al tocar. (Alta) 
+    * RF5 : Permitir filtrar ubicaciones por fecha, etiquetas o palabras clave. (Baja) 
 3.  **Navegación**
-    * RF6 : Calcular la ruta desde la ubicación actual hasta el vehículo usando GPS. (Alta) [cite: 28, 29]
-    * RF7 : Ofrecer integración con apps de terceros como Google Maps o Waze para guía paso a paso. (Media) [cite: 29, 30]
+    * RF6 : Calcular la ruta desde la ubicación actual hasta el vehículo usando GPS. (Alta) 
+    * RF7 : Ofrecer integración con apps de terceros como Google Maps o Waze para guía paso a paso. (Media)
 4.  **Historial y Sincronización**
-    * RF8 : Mantener un historial de ubicaciones anteriores con capacidad de búsqueda por fecha o texto. (Media) [cite: 30, 31]
-    * RF9 : Sincronizar los datos con una cuenta en la nube (Firebase, Google Drive, iCloud) para respaldo y acceso desde múltiples dispositivos. (Baja) [cite: 31, 32]
+    * RF8 : Mantener un historial de ubicaciones anteriores con capacidad de búsqueda por fecha o texto. (Media) 
+    * RF9 : Sincronizar los datos con una cuenta en la nube (Firebase, Google Drive, iCloud) para respaldo y acceso desde múltiples dispositivos. (Baja) 
 5.  **Alertas y Automatización**
-    * RF10 : Enviar notificación si el usuario se aleja del vehículo sin guardar su ubicación. (Opcional) [cite: 32, 33]
+    * RF10 : Enviar notificación si el usuario se aleja del vehículo sin guardar su ubicación. (Opcional) 
 
 ## 🔒 REQUISITOS NO FUNCIONALES (RNF)
 
 1.  **Rendimiento**
-    * RNF1 : El sistema debe guardar o recuperar la ubicación en menos de 2 segundos. (Crítico) [cite: 33, 34]
-    * RNF2 : El consumo de batería debe ser optimizado, especialmente cuando la app está en segundo plano. (Alta) [cite: 34, 35]
+    * RNF1 : El sistema debe guardar o recuperar la ubicación en menos de 2 segundos. (Crítico)
+    * RNF2 : El consumo de batería debe ser optimizado, especialmente cuando la app está en segundo plano. (Alta)
 2.  **Usabilidad**
-    * RNF3 : Interfaz intuitiva siguiendo principios de Material Design (Android) o Human Interface Guidelines (iOS). (Alta) [cite: 35, 36]
-    * RNF4 : Accesibilidad: modo oscuro, contraste elevado y compatibilidad con lectores de pantalla. (Media) [cite: 36, 37]
+    * RNF3 : Interfaz intuitiva siguiendo principios de Material Design (Android) o Human Interface Guidelines (iOS). (Alta)
+    * RNF4 : Accesibilidad: modo oscuro, contraste elevado y compatibilidad con lectores de pantalla. (Media) 
 3.  **Seguridad**
-    * RNF5 : Cifrado de datos sensibles (coordenadas, notas) tanto en tránsito como en almacenamiento local. (Alta) [cite: 37, 38]
-    * RNF6 : Autenticación opcional mediante biometría (huella digital o reconocimiento facial). (Media) [cite: 38, 39]
+    * RNF5 : Cifrado de datos sensibles (coordenadas, notas) tanto en tránsito como en almacenamiento local. (Alta) 
+    * RNF6 : Autenticación opcional mediante biometría (huella digital o reconocimiento facial). (Media) 
 4.  **Compatibilidad**
-    * RNF7 : Soporte para Android (API 26+) y iOS (iOS 14+). (Alta) [cite: 39, 40]
+    * RNF7 : Soporte para Android (API 26+) y iOS (iOS 14+). (Alta) 
     * RNF8 : Capacidad de operar sin conexión a internet, guardando la ubicación localmente hasta que haya conexión. (Media) 
 5.  **Escalabilidad**
     * RNF9 : Estructura modular para permitir futuras funcionalidades como compartir ubicación o recordatorios inteligentes. (Baja) 
@@ -115,27 +115,27 @@
 ## 🧪 EJEMPLOS DE CASOS DE PRUEBA
 
 * RF1 + RNF1
-    * Escenario : El usuario pulsa el botón “Guardar ubicación” con señal GPS débil. [cite: 43, 44]
+    * Escenario : El usuario pulsa el botón “Guardar ubicación” con señal GPS débil. 
     * Resultado esperado : La app almacena las coordenadas aproximadas en menos de 2 segundos y muestra una notificación de éxito.
 * RNF2
     * Escenario : La app permanece abierta en segundo plano por 2 horas mientras se mantiene el GPS activo.
     * Resultado esperado : El consumo de batería no debe superar el 7%. 
 * RF6 + RNF8
-    * Escenario : El usuario intenta ver la ruta hacia su vehículo sin conexión a internet. [cite: 47, 48]
-    * Resultado esperado : Se muestra una alerta de conectividad o se ofrece una ruta previamente guardada. [cite: 48]
+    * Escenario : El usuario intenta ver la ruta hacia su vehículo sin conexión a internet.
+    * Resultado esperado : Se muestra una alerta de conectividad o se ofrece una ruta previamente guardada.
 
 ## 🔧 HERRAMIENTAS RECOMENDADAS
 
-* IDE : Android Studio (Kotlin) o Xcode (Swift) [cite: 49]
-* API de mapas : Google Maps SDK / MapKit [cite: 49]
-* Back-end / Sync : Firebase Realtime Database o Firestore [cite: 49]
-* Encriptación : AES-256 (con SQLCipher o Keystore) [cite: 49]
-* Testing : JUnit para lógica, Espresso/Appium para interfaz [cite: 49]
+* IDE : Android Studio (Kotlin) o Xcode (Swift) 
+* API de mapas : Google Maps SDK / MapKit 
+* Back-end / Sync : Firebase Realtime Database o Firestore 
+* Encriptación : AES-256 (con SQLCipher o Keystore) 
+* Testing : JUnit para lógica, Espresso/Appium para interfaz 
 
 ## DESARROLLO E IMPLEMENTACIÓN DE LA BASE DE DATOS
 
 Este es el diagrama Entidad Relación del proyecto, diseñado para cubrir todos los casos de usos mencionados anteriormente en el proyecto.
-Usamos el modelo SQL con tablas claves y relación. [cite: 49, 50]
+Usamos el modelo SQL con tablas claves y relación. 
 
 ![Diagrama Entidad Relación 1](imagenes/Imagen7.png)
 
