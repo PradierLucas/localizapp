@@ -1,5 +1,14 @@
 # Localizador de Estacionamiento Personal
 
+## Integrantes del Grupo
+
+Este proyecto fue desarrollado por un grupo de estudiantes comprometidos con la creación de una solución práctica para facilitar la ubicación de vehículos estacionados. Los miembros del equipo son:
+
+* Galeano Joaquin
+* Lopez Sebastian
+* Pradier Lucas
+* Vera Franco
+
 ## CASOS DE USO e HISTORIAS DE USUARIO
 
 ### ✅ Caso de Uso 1: Guardar ubicación actual del vehículo
